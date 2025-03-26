@@ -1,7 +1,7 @@
 //Escribir aqui los objetos
 
 object galvan {
-    const sueldo = 15000
+    var sueldo = 15000
 }
 
 object baigorria {
@@ -9,8 +9,9 @@ object baigorria {
 }
 
 object gimenez {
-    var fondoSueldos = 300000 - 
+    var fondoSueldos = 300000 - pagoEmpleado(_empleado)
 }
 
-method empanadasVendidas 
-
+method actualizarSueldo(_empleado) {
+    sueldo = sueldo 
+}
