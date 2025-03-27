@@ -14,9 +14,20 @@ object galvan {
     }
 
     method gastar(monto) {
-        deuda = deuda + monto
-        dinero = dinero - monto
+        deuda = deuda + monto // 
     }
+
+    method cobrarSueldo () {
+        if (sueldo >=deuda) {
+                    dinero = dinero + sueldo - deuda
+                    deuda = 0
+        }
+                    else {
+                        deuda = deuda - sueldo 
+                    }
+        
+    }
+
 }
 
 object baigorria {
