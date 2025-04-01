@@ -10,7 +10,7 @@ object galvan {
   
   method sueldo() = sueldo // getter: devuelve un atributo
 
-  method deuda() = deuda
+  method deuda() = saldo.min(0).abs(0)
   
   method gastar(monto) {
     deuda += monto // 
